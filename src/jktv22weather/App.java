@@ -5,6 +5,7 @@
  */
 package jktv22weather;
 
+import tasks.InitProject;
 import java.util.Scanner;
 
 /**
@@ -22,6 +23,8 @@ public class App {
     public void run() {
         System.out.println("Погода в году");
         boolean repeat =true;
+        InitProject initProject = new InitProject();
+        initProject.init();
         do {
            System.out.println("Выберите задачу:");
            System.out.println("0.Выход из программы");
